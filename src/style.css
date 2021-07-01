@@ -1,0 +1,51 @@
+.app {
+  min-width: 400px;
+  max-width: 700px;
+  margin: 100px auto 0;
+}
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main {
+  background-color: #a6d6a2;
+  border-radius: 5px;
+  box-shadow: 0px 10px 25px 3px rgba(34, 60, 80, 0.2);
+  padding: 15px;
+}
+.main .messages {
+  background-color: #e8f1ea;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  height: 300px;
+  overflow: auto;
+}
+.main .messages .message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.main .messages .message .author {
+  margin-right: 10px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+.main .messages .message .text {
+  background-color: #93cabe;
+  border-radius: 5px;
+  padding: 5px;
+}
+.main .sendForm {
+  display: flex;
+  justify-content: space-between;
+}
+.main .sendForm .author {
+  width: 50px;
+}
+.main .sendForm .text {
+  flex-grow: 1;
+  margin: 0 10px;
+}

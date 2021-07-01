@@ -1,0 +1,64 @@
+.app {
+  min-width: 400px;
+  max-width: 700px;
+  margin: 100px auto 0;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main {
+  background-color: rgb(166, 214, 162);
+  border-radius: 5px;
+  box-shadow: 0px 10px 25px 3px rgba(34, 60, 80, 0.2);
+  padding: 15px;
+
+  & .messages {
+    background-color: rgb(232, 241, 234);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+
+    height: 300px;
+    overflow: auto;
+
+    & .message {
+      display: flex;
+      justify-content: flex-end;
+
+      margin-bottom: 20px;
+
+      & .author {
+        margin-right: 10px;
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      & .text {
+        background-color: rgb(147, 202, 190);
+        border-radius: 5px;
+        padding: 5px;
+      }
+    }
+  }
+
+  & .sendForm {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    & .author {
+      width: 50px;
+    }
+
+    & .text {
+      flex-grow: 1;
+      margin: 0 10px;
+    }
+  }
+}
